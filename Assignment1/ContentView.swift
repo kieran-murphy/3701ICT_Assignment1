@@ -20,7 +20,7 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                     .padding(.leading)
-                Text("Ingredients: Sugar, Happiness")
+                Text("A mixture of sugar and happiness")
                     .italic()
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.leading)
