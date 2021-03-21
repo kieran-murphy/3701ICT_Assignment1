@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA7203DC260700FA0037D8CF /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7203DB260700FA0037D8CF /* Food.swift */; };
 		CAE221D926016DDA00C04454 /* Assignment1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE221D826016DDA00C04454 /* Assignment1App.swift */; };
 		CAE221DB26016DDA00C04454 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE221DA26016DDA00C04454 /* ContentView.swift */; };
 		CAE221DD26016DDB00C04454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE221DC26016DDB00C04454 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA7203DB260700FA0037D8CF /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		CAE221D526016DDA00C04454 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE221D826016DDA00C04454 /* Assignment1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1App.swift; sourceTree = "<group>"; };
 		CAE221DA26016DDA00C04454 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				CAE221DC26016DDB00C04454 /* Assets.xcassets */,
 				CAE221E126016DDB00C04454 /* Info.plist */,
 				CAE221DE26016DDB00C04454 /* Preview Content */,
+				CA7203DB260700FA0037D8CF /* Food.swift */,
 			);
 			path = Assignment1;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				CAE221DB26016DDA00C04454 /* ContentView.swift in Sources */,
 				CAE221D926016DDA00C04454 /* Assignment1App.swift in Sources */,
+				CA7203DC260700FA0037D8CF /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

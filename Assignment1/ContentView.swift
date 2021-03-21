@@ -10,22 +10,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading) {
-            Image("cottonCandy")
+            Image(cottonCandy.image)
                 .resizable()
                 //.scaledToFit()
                 .frame(width: 414.0,height:400)
             VStack(alignment: .leading) {
-                Text("Cotton Candy")
+                Text(cottonCandy.name)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                     .padding(.leading)
-                Text("A mixture of sugar and happiness")
+                Text(cottonCandy.desc)
                     .italic()
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.leading)
                     .padding(.leading)
-                Text("My dentist hates me for eating this. Sorry, dentist.")
+                Text(cottonCandy.story)
                     .padding(.leading)
                     .padding(.top)
             }

@@ -18,16 +18,44 @@ class Assignment1Tests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testFood() {
+        let name = "Cotton Candy"
+        let image = "cottonCandy"
+        let desc = "A mixture of sugar and happiness"
+        let story = "My dentist hates me for eating this. Sorry, dentist."
+        let food = Food(name: name, image: image, desc: desc, story: story)
+        
+        XCTAssertEqual(food.image, image)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testFoodName() {
+        let name = "Cotton Candy"
+        let image = "cottonCandy"
+        let desc = "A mixture of sugar and happiness"
+        let story = "My dentist hates me for eating this. Sorry, dentist."
+        let food = Food(name: name, image: image, desc: desc, story: story)
+        
+        XCTAssertEqual(food.name, name)
+    }
+    
+    func testFoodStory() {
+        let name = "Cotton Candy"
+        let image = "cottonCandy"
+        let desc = "A mixture of sugar and happiness"
+        let story = "My dentist hates me for eating this. Sorry, dentist."
+        let food = Food(name: name, image: image, desc: desc, story: story)
+        
+        XCTAssertEqual(food.story, story)
+    }
+    
+    func testFoodDesc() {
+        let name = "Cotton Candy"
+        let image = "cottonCandy"
+        let desc = "A mixture of sugar and happiness"
+        let story = "My dentist hates me for eating this. Sorry, dentist."
+        let food = Food(name: name, image: image, desc: desc, story: story)
+        
+        XCTAssertEqual(food.desc, desc)
     }
 
 }
