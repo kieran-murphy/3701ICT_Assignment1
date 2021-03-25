@@ -15,8 +15,14 @@ struct FoodRow: View {
                 Image(food.image)
                     .resizable()
                     .frame(width: 50, height: 50)
-                Text(food.name)
-
+                VStack(alignment: .leading) {
+                    Text(food.name)
+                    Text(food.desc)
+                    .italic()
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.leading)
+                    //.padding(.leading)
+                }
                 Spacer()
             }
     }
