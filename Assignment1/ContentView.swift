@@ -12,7 +12,6 @@ struct ContentView: View {
         VStack(alignment: .leading) {
             Image(cottonCandy.image)
                 .resizable()
-                //.scaledToFit()
                 .frame(width: 414.0,height:400)
             VStack(alignment: .leading) {
                 Text(cottonCandy.name)

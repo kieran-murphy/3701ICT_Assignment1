@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Bottlebrush1x.jpg",
+      "filename" : "1x.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Bottlebrush2x.jpg",
+      "filename" : "2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Bottlebrush3x.jpg",
+      "filename" : "cupcake.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
