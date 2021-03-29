@@ -30,17 +30,22 @@ class Assignment1Tests: XCTestCase {
          - Returns:
             For each parameter runs an XCTAssertEqual test, testing the local variables within the method against the associated attributes in the "Food" class
          */
+    
         func testFoodGetters() {
             let name = "Cotton Candy"
             let image = "cottonCandy"
             let desc = "A mixture of sugar and happiness"
             let story = "My dentist hates me for eating this. Sorry, dentist."
-            let food = Food(name: name, image: image, desc: desc, story: story)
+            let recipe = "Instructions for how to make Cotton Candy"
+            let ingredients = "Ingredients for making Cotton Candy"
+            let food = Food(name: name, image: image, desc: desc, story: story, recipe: recipe, ingredients: ingredients)
             
             XCTAssertEqual(food.image, image)
             XCTAssertEqual(food.name, name)
             XCTAssertEqual(food.desc, desc)
             XCTAssertEqual(food.story, story)
+            XCTAssertEqual(food.recipe, recipe)
+            XCTAssertEqual(food.ingredients, ingredients)
         }
     
         
@@ -49,7 +54,9 @@ class Assignment1Tests: XCTestCase {
             let image = "cottonCandy"
             let desc = "A mixture of sugar and happiness"
             let story = "My dentist hates me for eating this. Sorry, dentist."
-            let food = Food(name: name, image: image, desc: desc, story: story)
+            let recipe = "Instructions for how to make Cotton Candy"
+            let ingredients = "Ingredients for making Cotton Candy"
+            let food = Food(name: name, image: image, desc: desc, story: story, recipe: recipe, ingredients: ingredients)
             
             let newName = "Frozen Yoghurt"
             food.name = newName
@@ -66,6 +73,14 @@ class Assignment1Tests: XCTestCase {
             let newStory = "Frozen Yoghurt Story"
             food.story = newStory
             XCTAssertEqual(food.story, "Frozen Yoghurt Story")
+            
+            let newRecipe = "Instructions for how to make Frozen Yoghurt"
+            food.recipe = newRecipe
+            XCTAssertEqual(food.recipe, "Instructions for how to make Frozen Yoghurt")
+            
+            let newIngredients = "Ingredients for making Frozen Yoghurt"
+            food.ingredients = newIngredients
+            XCTAssertEqual(food.ingredients, "Ingredients for making Frozen Yoghurt")
         }
 }
 
