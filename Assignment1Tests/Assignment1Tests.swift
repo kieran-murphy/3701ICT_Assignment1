@@ -36,8 +36,8 @@ class Assignment1Tests: XCTestCase {
             let image = "cottonCandy"
             let desc = "A mixture of sugar and happiness"
             let story = "My dentist hates me for eating this. Sorry, dentist."
-            let recipe = "Instructions for how to make Cotton Candy"
-            let ingredients = "Ingredients for making Cotton Candy"
+            let recipe = ["Step 1", "Step 2", "Step 3"]
+            let ingredients = ["Ingredients", "for", "making", "Cotton Candy"]
             let food = Food(name: name, image: image, desc: desc, story: story, recipe: recipe, ingredients: ingredients)
             
             XCTAssertEqual(food.image, image)
@@ -54,8 +54,8 @@ class Assignment1Tests: XCTestCase {
             let image = "cottonCandy"
             let desc = "A mixture of sugar and happiness"
             let story = "My dentist hates me for eating this. Sorry, dentist."
-            let recipe = "Instructions for how to make Cotton Candy"
-            let ingredients = "Ingredients for making Cotton Candy"
+            let recipe = ["Step 1", "Step 2", "Step 3"]
+            let ingredients = ["Ingredients", "for", "making", "Cotton Candy"]
             let food = Food(name: name, image: image, desc: desc, story: story, recipe: recipe, ingredients: ingredients)
             
             let newName = "Frozen Yoghurt"
@@ -74,13 +74,13 @@ class Assignment1Tests: XCTestCase {
             food.story = newStory
             XCTAssertEqual(food.story, "Frozen Yoghurt Story")
             
-            let newRecipe = "Instructions for how to make Frozen Yoghurt"
+            let newRecipe = ["Step 1", "Step 2", "Step 3", "Step 4"]
             food.recipe = newRecipe
-            XCTAssertEqual(food.recipe, "Instructions for how to make Frozen Yoghurt")
+            XCTAssertEqual(food.recipe, ["Step 1", "Step 2", "Step 3", "Step 4"])
             
-            let newIngredients = "Ingredients for making Frozen Yoghurt"
+            let newIngredients = ["Ingredients", "for", "making", "Frozen Yoghurt"]
             food.ingredients = newIngredients
-            XCTAssertEqual(food.ingredients, "Ingredients for making Frozen Yoghurt")
+            XCTAssertEqual(food.ingredients, ["Ingredients", "for", "making", "Frozen Yoghurt"])
         }
 }
 

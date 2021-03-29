@@ -30,7 +30,7 @@ struct FoodList: View {
                 NavigationLink(destination: FoodDetail(food: rainbowCake)) {
                     FoodRow(food: rainbowCake)
                 }
-                }.navigationTitle("Foods")
+                }.navigationTitle("Favourite Foods")
         }
     }
 }
