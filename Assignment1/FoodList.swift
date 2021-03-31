@@ -10,27 +10,11 @@ import SwiftUI
 struct FoodList: View {
     var body: some View {
         NavigationView {
-            List {
-                
-                NavigationLink(destination: FoodDetail(food: cottonCandy)) {
-                    FoodRow(food: cottonCandy)
-                }
-                NavigationLink(destination: FoodDetail(food: cupcake)) {
-                    FoodRow(food: cupcake)
-                }
-                NavigationLink(destination: FoodDetail(food: donut)) {
-                    FoodRow(food: donut)
-                }
-                NavigationLink(destination: FoodDetail(food: macaroon)) {
-                    FoodRow(food: macaroon)
-                }
-                NavigationLink(destination: FoodDetail(food: popsicle)) {
-                    FoodRow(food: popsicle)
-                }
-                NavigationLink(destination: FoodDetail(food: rainbowCake)) {
-                    FoodRow(food: rainbowCake)
-                }
-                }.navigationTitle("Favourite Foods")
+                    List(favouriteFoods) { fooditem in
+                        NavigationLink(destination: FoodDetail(food: fooditem)) {
+                            FoodRow(food: fooditem)
+                        }
+                    }.navigationTitle("Favourite Foods")
         }
     }
 }

@@ -6,7 +6,7 @@
 //
 
 /// 🍔 An edible form of energy for humans
-class Food {
+class Food: Identifiable {
     ///The name of the food item
     var name: String
     ///The reference image of the food item
