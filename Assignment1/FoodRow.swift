@@ -21,7 +21,6 @@ struct FoodRow: View {
                     .italic()
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.leading)
-                    //.padding(.leading)
                 }
                 Spacer()
             }

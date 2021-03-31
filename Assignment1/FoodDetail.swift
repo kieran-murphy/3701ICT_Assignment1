@@ -11,25 +11,27 @@ struct FoodDetail: View {
     var food: Food
     
     var body: some View {
-        ScrollView {
+        
             VStack {
             Image(food.image)
                 .resizable()
-                .frame(width: 414.0,height:414)
+                .frame(width: 300.0,height:300.0)
                 .aspectRatio(contentMode: .fill)
-                
+                .shadow(radius: 6)
+                .padding(.bottom)
+            ScrollView {
                 VStack(alignment: .leading) {
                 Text(food.name)
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .multilineTextAlignment(.leading)
                     .padding(.leading)
+                    .multilineTextAlignment(.leading)
                 
                 Text(food.desc)
                     .italic()
                     .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.leading)
                     .padding(.horizontal)
+                    .multilineTextAlignment(.leading)
                 Text(food.story)
                     .padding(.horizontal)
                     .padding(.top)
@@ -39,8 +41,8 @@ struct FoodDetail: View {
                     .padding(.horizontal)
                     .padding(.vertical)
                     ForEach(food.ingredients, id: \.self) { ingredient in
-                                    Text(ingredient)
-                                    Divider()
+                        Text(ingredient)
+                        Divider()
                     }.padding(.horizontal)
                     
                 Text("Recipe")
@@ -48,19 +50,14 @@ struct FoodDetail: View {
                     .padding(.horizontal)
                     .padding(.vertical)
                     ForEach(food.recipe, id: \.self) { step in
-                                    Text(step)
-                                    Divider()
+                        Text(step)
+                        Divider()
                     }.padding(.horizontal)
-                    
-                
-                    
-                    
                     
                 }.frame(maxWidth: .infinity)
             
         }.frame(minWidth: 0,
                 maxWidth: .infinity,
-                //minHeight: 0
                 maxHeight: .infinity,
                 alignment: .center
         )
