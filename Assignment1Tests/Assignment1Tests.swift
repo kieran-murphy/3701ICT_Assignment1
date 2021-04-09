@@ -27,6 +27,9 @@ class Assignment1Tests: XCTestCase {
             - image: The reference image of the food item
             - desc: A short description of the food item
             - story: A short personal story about the food item
+            - recipe: A list of each step to make the food
+            - Ingredients: A list of each ingredient required to make the food
+     
          - Returns:
             For each parameter runs an XCTAssertEqual test, testing the local variables within the method against the associated attributes in the "Food" class
          */
