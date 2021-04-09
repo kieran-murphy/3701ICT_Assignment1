@@ -44,8 +44,6 @@ struct FoodDetail: View {
                         Text(ingredient)
                         Divider()
                     }.padding(.horizontal)
-                    
-                    
                 Text("Recipe")
                     .bold()
                     .padding(.horizontal)

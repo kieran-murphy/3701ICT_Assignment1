@@ -6,7 +6,7 @@
 //
 
 /// 🍔 An edible form of energy for humans
-class Food: Identifiable {
+struct Food: Hashable {
     ///The name of the food item
     var name: String
     ///The reference image of the food item
@@ -19,27 +19,6 @@ class Food: Identifiable {
     var recipe: [String] = []
     ///A list of things required to create the food item
     var ingredients: [String] = []
-    
-    /**
-         Initializes a new food with the provided attributes.
-         - Parameters:
-            - name: The name of the food item
-            - image: The reference image of the food item
-            - desc: A short description of the food item
-            - story: A short personal story about the food item
-            - recipe: Instructions on how to create the food item
-            - ingredients: A list of things required to create the food item
-         - Returns: A yummy food item constructed in Swift
-         */
-    init(name: String, image: String, desc: String, story: String, recipe: [String] = [], ingredients: [String] = []) {
-        self.name = name
-        self.image = image
-        self.desc = desc
-        self.story = story
-        self.recipe = recipe
-        self.ingredients = ingredients
-        
-    }
 }
 
 
@@ -56,26 +35,9 @@ let popsicle = Food(name: "Popsicle", image: "popsicle", desc: "Yummy ice cream 
 let rainbowCake = Food(name: "Rainbow Cake", image: "rainbowCake", desc: "Taste the rainbow", story: "I love eating rainbow cake every time on my birthday", recipe: ["Step 1 - Combine buttermilk and the oil together and set aside.", "Step 2 - Combine the remaining buttermilk, egg whites, and vanilla together, whisk to break up the eggs and set aside.", "Step 3 - Combine flour, sugar, baking powder, and salt using a hand mixture.", "Step 4 - Add butter to the dry ingredients and mix on low until mixture resembles coarse sand.", "Step 5 - Add in your milk/oil mixture and let mix until dry ingredients are moistened.", "Step 6 - Add in your egg white/milk mixture in three batches, letting the batter mix for 15 seconds between additions.", "Step 7 - Divide your batter into 6 bowls and add different food colours to each batter.", "Step 8 - Bake your layers for 20-24 minutes at 168 Celsius or until the edges JUST start pulling away from the cake pan."], ingredients: ["680 g cake flour", "680 g granulated sugar", "1 tablespoon of salt", "2 tablespoons of baking power", "283 g of egg white", "170 g of vegetable oil", "510 g of buttermilk", "340 g of unsalted butter", "1 tablespoon of vanilla extract", "6 food colouring"])
 
 /// An array of all the favourite foods
-var favouriteFoods = [cottonCandy, cupcake, donut, macaroon, popsicle, rainbowCake]
+var favouriteFoodsFood = [cottonCandy, cupcake, donut, macaroon, popsicle, rainbowCake]
 
 
-struct Nom: Hashable {
-    var name: String
-    
-    var image: String
-    
-    var desc: String
-    
-    var story: String
-    
-    var recipe: [String] = []
-    
-    var ingredients: [String] = []
-}
-
-let nom1 = Nom(name: "Cotton Candy", image: "cottonCandy", desc: "A mixture of sugar and happiness", story: "My dentist hates me for eating this. Sorry, dentist.", recipe: ["Step 1 - Add sugar to the middle of the machine and twist the spinner to get the sugar evenly in the head.", "Step 2- Turn on the motor switch and turn on the heat switch.", "Step 3 - Catch the cotton candy with the cone as it comes out of the machine."], ingredients: ["4 cups of sugar", "1 cup of corn syrup", "1 cup of water", "4 ¼ teaspoon of salt", "1 tablespoon of raspberry extract", "2 drops of pink food colouring"])
-
-let nom2 = Nom(name: "Cupcake", image: "cupcake", desc: "A small yummy treat", story: "Icing is the most important part of a cupcake", recipe: ["Step 1 - Preheat oven to 180°C/160°C. Line muffin pans with paper cases.", "Step 2 - Using an electric mixer, beat butter, eggs, vanilla and sugar until light and fluffy. Transfer mixture to a large bowl. Stir in half the flour and milk. Repeat with remaining flour and milk until combined.", "Step 3 - For 1/3 cup-capacity muffin pans use 2 level tablespoons of mixture.", "Step 4 - Bake for 15 to 17 minutes.", "Step 5 - Transfer to a wire rack to cool."], ingredients: ["200g unsalted butter", "1 teaspoon vanilla extract", "1 cup caster sugar", "3 eggs", "2 ½ cups of self-raising flour", "½ cup of milk"])
 
 
-var favouriteNomsFirst = [nom1, nom2]
+
