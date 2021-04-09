@@ -57,3 +57,25 @@ let rainbowCake = Food(name: "Rainbow Cake", image: "rainbowCake", desc: "Taste 
 
 /// An array of all the favourite foods
 var favouriteFoods = [cottonCandy, cupcake, donut, macaroon, popsicle, rainbowCake]
+
+
+struct Nom: Hashable {
+    var name: String
+    
+    var image: String
+    
+    var desc: String
+    
+    var story: String
+    
+    var recipe: [String] = []
+    
+    var ingredients: [String] = []
+}
+
+let nom1 = Nom(name: "Cotton Candy", image: "cottonCandy", desc: "A mixture of sugar and happiness", story: "My dentist hates me for eating this. Sorry, dentist.", recipe: ["Step 1 - Add sugar to the middle of the machine and twist the spinner to get the sugar evenly in the head.", "Step 2- Turn on the motor switch and turn on the heat switch.", "Step 3 - Catch the cotton candy with the cone as it comes out of the machine."], ingredients: ["4 cups of sugar", "1 cup of corn syrup", "1 cup of water", "4 ¼ teaspoon of salt", "1 tablespoon of raspberry extract", "2 drops of pink food colouring"])
+
+let nom2 = Nom(name: "Cupcake", image: "cupcake", desc: "A small yummy treat", story: "Icing is the most important part of a cupcake", recipe: ["Step 1 - Preheat oven to 180°C/160°C. Line muffin pans with paper cases.", "Step 2 - Using an electric mixer, beat butter, eggs, vanilla and sugar until light and fluffy. Transfer mixture to a large bowl. Stir in half the flour and milk. Repeat with remaining flour and milk until combined.", "Step 3 - For 1/3 cup-capacity muffin pans use 2 level tablespoons of mixture.", "Step 4 - Bake for 15 to 17 minutes.", "Step 5 - Transfer to a wire rack to cool."], ingredients: ["200g unsalted butter", "1 teaspoon vanilla extract", "1 cup caster sugar", "3 eggs", "2 ½ cups of self-raising flour", "½ cup of milk"])
+
+
+var favouriteNomsFirst = [nom1, nom2]
