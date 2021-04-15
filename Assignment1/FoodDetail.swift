@@ -62,6 +62,7 @@ struct FoodDetail: View {
         )
     }
     }
+    
 }
 
 struct FoodDetail_Previews: PreviewProvider {

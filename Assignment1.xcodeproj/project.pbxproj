@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA2773742611EE01003D28FB /* Assignment1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE221EA26016DDB00C04454 /* Assignment1Tests.swift */; };
+		CA317B0A2626590500ACA643 /* FoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA317B092626590500ACA643 /* FoodData.swift */; };
 		CA8AFD23260C6D3800F3A1C8 /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AFD22260C6D3700F3A1C8 /* FoodRow.swift */; };
 		CA8AFD24260C6D3800F3A1C8 /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AFD22260C6D3700F3A1C8 /* FoodRow.swift */; };
 		CA8AFD25260C6D3800F3A1C8 /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AFD22260C6D3700F3A1C8 /* FoodRow.swift */; };
@@ -20,6 +21,7 @@
 		CAC5806A2611EC7D00A96258 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC580692611EC7D00A96258 /* Food.swift */; };
 		CAC5806B2611EC7D00A96258 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC580692611EC7D00A96258 /* Food.swift */; };
 		CAC5806C2611EC7D00A96258 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC580692611EC7D00A96258 /* Food.swift */; };
+		CAC77C0926241B2D003153F4 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC77C0826241B2D003153F4 /* EditView.swift */; };
 		CAE221D926016DDA00C04454 /* Assignment1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE221D826016DDA00C04454 /* Assignment1App.swift */; };
 		CAE221DB26016DDA00C04454 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE221DA26016DDA00C04454 /* ContentView.swift */; };
 		CAE221DD26016DDB00C04454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE221DC26016DDB00C04454 /* Assets.xcassets */; };
@@ -46,10 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA317B092626590500ACA643 /* FoodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodData.swift; sourceTree = "<group>"; };
 		CA8AFD22260C6D3700F3A1C8 /* FoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRow.swift; sourceTree = "<group>"; };
 		CA8AFD2C260C742200F3A1C8 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
 		CA8AFD33260C781F00F3A1C8 /* FoodDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetail.swift; sourceTree = "<group>"; };
 		CAC580692611EC7D00A96258 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		CAC77C0826241B2D003153F4 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		CAE221D526016DDA00C04454 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE221D826016DDA00C04454 /* Assignment1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1App.swift; sourceTree = "<group>"; };
 		CAE221DA26016DDA00C04454 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				CA8AFD2C260C742200F3A1C8 /* FoodList.swift */,
 				CA8AFD33260C781F00F3A1C8 /* FoodDetail.swift */,
 				CAC580692611EC7D00A96258 /* Food.swift */,
+				CAC77C0826241B2D003153F4 /* EditView.swift */,
+				CA317B092626590500ACA643 /* FoodData.swift */,
 			);
 			path = Assignment1;
 			sourceTree = "<group>";
@@ -283,7 +289,9 @@
 				CA8AFD23260C6D3800F3A1C8 /* FoodRow.swift in Sources */,
 				CAE221DB26016DDA00C04454 /* ContentView.swift in Sources */,
 				CA8AFD34260C781F00F3A1C8 /* FoodDetail.swift in Sources */,
+				CA317B0A2626590500ACA643 /* FoodData.swift in Sources */,
 				CAE221D926016DDA00C04454 /* Assignment1App.swift in Sources */,
+				CAC77C0926241B2D003153F4 /* EditView.swift in Sources */,
 				CA8AFD2D260C742200F3A1C8 /* FoodList.swift in Sources */,
 				CAC5806A2611EC7D00A96258 /* Food.swift in Sources */,
 			);

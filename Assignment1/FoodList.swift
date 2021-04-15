@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct FoodList: View {
-    @State var foods: [String] = ["Donut", "Cupcake", "Cotton Candy", "Macaroon", "Popsicle", "Rainbow Cake"]
     @State var favouriteFoods = favouriteFoodsFood
     var body: some View {
         NavigationView {
@@ -22,17 +21,18 @@ struct FoodList: View {
                         .onDelete(perform: delete)
                         .onMove(perform: move)
                     }.navigationTitle("Favourite Foods")
-                     .navigationBarItems(leading: EditButton(), trailing: addButton)
+                .navigationBarItems(leading: EditButton(), trailing: Button( action: add)
+                {
+                    Image(systemName: "plus")
+                    
+                }
+                    )
                      .listStyle(InsetGroupedListStyle())
             }
         }
         
     }
-    var addButton: some View {
-        Button("Add", action: {
-            add()
-        })
-    }
+   
         
     func delete(indexSet: IndexSet) {
         favouriteFoods.remove(atOffsets: indexSet)
