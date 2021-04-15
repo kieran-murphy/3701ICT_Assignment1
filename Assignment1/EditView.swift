@@ -6,13 +6,13 @@
 //
 
 import SwiftUI
-/*
+
 struct EditView: View {
-    @State var foodData = favouriteFoodsFood[cottonCandy]
+    //@State var foodData = favouriteFoodsFood[cottonCandy]
     var body: some View {
         List {
             Section(header: Text("Meeting Info")) {
-                TextField("Title", text: foodData.Food.name)
+                Text("Stuff works ")
             }
         }
     }
@@ -23,4 +23,4 @@ struct EditView_Previews: PreviewProvider {
         EditView()
     }
 }
-*/
+

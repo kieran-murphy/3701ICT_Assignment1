@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FoodDetail: View {
     var food: Food
-    
+    @State private var isPresented = false
     var body: some View {
         
             VStack {
@@ -61,6 +61,21 @@ struct FoodDetail: View {
                 alignment: .center
         )
     }
+            .navigationBarItems(trailing: Button("Edit") {
+                isPresented = true
+            })
+            
+            .fullScreenCover(isPresented: $isPresented) {
+                NavigationView {
+                    EditView()
+                        .navigationTitle("title")
+                        .navigationBarItems(leading: Button("Cancel") {
+                            isPresented = false
+                        }, trailing: Button("Done") {
+                            isPresented = false
+                        })
+                }
+            }
     }
     
 }
