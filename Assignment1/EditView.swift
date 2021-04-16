@@ -8,19 +8,30 @@
 import SwiftUI
 
 struct EditView: View {
-    //@State var foodData = favouriteFoodsFood[cottonCandy]
+    @State private var scrumData: DailyScrum.Data = DailyScrum.Data()
+    @State var food: Food
     var body: some View {
         List {
-            Section(header: Text("Meeting Info")) {
-                Text("Stuff works ")
+            Section(header: Text("Name")) {
+                TextField("Name", text: $food.name)
             }
-        }
+            Section(header: Text("Image")) {
+                TextField("Image", text: $food.image)
+            }
+            Section(header: Text("Desc")) {
+                TextField("Desc", text: $food.desc)
+            }
+            Section(header: Text("Story")) {
+                TextField("Story", text: $food.story)
+            }
+            
+        }.listStyle(InsetGroupedListStyle())
     }
 }
 
 struct EditView_Previews: PreviewProvider {
     static var previews: some View {
-        EditView()
+        EditView(food: cottonCandy)
     }
 }
 

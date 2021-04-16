@@ -21,3 +21,7 @@ let rainbowCake = Food(name: "Rainbow Cake", image: "rainbowCake", desc: "Taste 
 
 /// An array of all the favourite foods
 var favouriteFoodsFood = [cottonCandy, cupcake, donut, macaroon, popsicle, rainbowCake]
+
+let testNom = DailyScrum(title: "cottonCandy", attendees: ["Cathy", "Daisy", "Simon", "Jonathan"], lengthInMinutes: 10, color: "Design")
+
+var favs = [testNom]

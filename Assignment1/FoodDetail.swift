@@ -67,8 +67,8 @@ struct FoodDetail: View {
             
             .fullScreenCover(isPresented: $isPresented) {
                 NavigationView {
-                    EditView()
-                        .navigationTitle("title")
+                    EditView(food: food)
+                        .navigationTitle(food.name)
                         .navigationBarItems(leading: Button("Cancel") {
                             isPresented = false
                         }, trailing: Button("Done") {
