@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct EditView: View {
-    @State private var scrumData: DailyScrum.Data = DailyScrum.Data()
-    @State var food: Food
+    
+    @Binding var food: Food
     var body: some View {
+        
         List {
+            
             Section(header: Text("Name")) {
                 TextField("Name", text: $food.name)
             }
@@ -28,10 +30,11 @@ struct EditView: View {
         }.listStyle(InsetGroupedListStyle())
     }
 }
-
+/*
 struct EditView_Previews: PreviewProvider {
     static var previews: some View {
-        EditView(food: cottonCandy)
+        EditView(food: Food)
     }
 }
+*/
 

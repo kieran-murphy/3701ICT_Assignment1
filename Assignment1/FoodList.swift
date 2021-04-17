@@ -13,9 +13,9 @@ struct FoodList: View {
         NavigationView {
             VStack {
                 List {
-                        ForEach(favouriteFoods, id: \.self) { fooditem in
-                            NavigationLink(destination: FoodDetail(food: fooditem)) {
-                               FoodRow(food: fooditem)
+                        ForEach(favouriteFoods, id: \.self) { food in
+                            NavigationLink(destination: FoodDetail(food: food)) {
+                               FoodRow(food: food)
                            }
                         }
                         .onDelete(perform: delete)
@@ -41,7 +41,7 @@ struct FoodList: View {
         favouriteFoods.move(fromOffsets: indicies, toOffset: newOffset)
     }
     func add() {
-        favouriteFoods.append(Food(name: "Food", image: "placeholder", desc: "Insert description here", story: "Insert story here", recipe: ["Insert recipe here"], ingredients: ["Insert ingredients here"]))
+        favouriteFoods.append(Food(name: "Food", image: "Placeholder", desc: "Insert description here", story: "Insert story here", recipe: ["Insert recipe here"], ingredients: ["Insert ingredients here"]))
     }
 }
 

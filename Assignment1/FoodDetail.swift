@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FoodDetail: View {
-    var food: Food
+    @State var food: Food
     @State private var isPresented = false
     var body: some View {
         
@@ -67,8 +67,8 @@ struct FoodDetail: View {
             
             .fullScreenCover(isPresented: $isPresented) {
                 NavigationView {
-                    EditView(food: food)
-                        .navigationTitle(food.name)
+                    EditView(food: $food) /// make sure to have dollar sign
+                        .navigationTitle("Edit")
                         .navigationBarItems(leading: Button("Cancel") {
                             isPresented = false
                         }, trailing: Button("Done") {
@@ -88,3 +88,4 @@ struct FoodDetail_Previews: PreviewProvider {
         }
     }
 }
+
