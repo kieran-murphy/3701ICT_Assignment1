@@ -19,6 +19,7 @@ struct Food: Hashable {
     var recipe: [String] = []
     ///A list of things required to create the food item
     var ingredients: [String] = []
+    
 }
 
 

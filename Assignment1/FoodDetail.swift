@@ -67,7 +67,7 @@ struct FoodDetail: View {
             
             .fullScreenCover(isPresented: $isPresented) {
                 NavigationView {
-                    EditView(food: $food) /// make sure to have dollar sign
+                    EditView(food: $food)
                         .navigationTitle("Edit")
                         .navigationBarItems(leading: Button("Cancel") {
                             isPresented = false

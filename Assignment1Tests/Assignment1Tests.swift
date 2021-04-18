@@ -59,7 +59,7 @@ class Assignment1Tests: XCTestCase {
             let story = "My dentist hates me for eating this. Sorry, dentist."
             let recipe = ["Step 1", "Step 2", "Step 3"]
             let ingredients = ["Ingredients", "for", "making", "Cotton Candy"]
-            let food = Food(name: name, image: image, desc: desc, story: story, recipe: recipe, ingredients: ingredients)
+            var food = Food(name: name, image: image, desc: desc, story: story, recipe: recipe, ingredients: ingredients)
             
             let newName = "Frozen Yoghurt"
             food.name = newName

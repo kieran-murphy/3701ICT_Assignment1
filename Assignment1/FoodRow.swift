@@ -27,7 +27,8 @@ struct FoodRow: View {
     }
 }
 
-struct FoodRow_Previews: PreviewProvider {
+/*
+ struct FoodRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
                     FoodRow(food: cottonCandy)
@@ -36,3 +37,4 @@ struct FoodRow_Previews: PreviewProvider {
                 .previewLayout(.fixed(width: 300, height: 70))
     }
 }
+*/
