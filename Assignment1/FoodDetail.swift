@@ -13,12 +13,12 @@ struct FoodDetail: View {
     var body: some View {
         
             VStack {
-            Image(food.image)
-                .resizable()
-                .frame(width: 300.0,height:300.0)
-                .aspectRatio(contentMode: .fill)
-                .shadow(radius: 6)
-                .padding(.bottom)
+                imageDownload(food.url)
+                    .resizable()
+                    .frame(width: 300.0,height:300.0)
+                    .aspectRatio(contentMode: .fill)
+                    .shadow(radius: 6)
+                    .padding(.bottom)
             ScrollView {
                 VStack(alignment: .leading) {
                 Text(food.name)
@@ -27,6 +27,7 @@ struct FoodDetail: View {
                     .padding(.leading)
                     .multilineTextAlignment(.leading)
                 
+                    
                 Text(food.desc)
                     .italic()
                     .fontWeight(.ultraLight)
@@ -52,6 +53,8 @@ struct FoodDetail: View {
                         Text(step)
                         Divider()
                     }.padding(.horizontal)
+                
+                
                     
                 }.frame(maxWidth: .infinity)
             

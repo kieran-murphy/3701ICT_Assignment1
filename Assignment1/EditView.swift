@@ -17,7 +17,7 @@ struct EditView: View {
                 TextField("Name", text: $food.name)
             }
             Section(header: Text("Image")) {
-                TextField("Image", text: $food.image)
+                TextField("Image", text: $food.url)
             }
             Section(header: Text("Desc")) {
                 TextField("Desc", text: $food.desc)
@@ -30,12 +30,5 @@ struct EditView: View {
     }
 }
 
-/*
-struct EditView_Previews: PreviewProvider {
-    static var previews: some View {
-        
-        EditView(food: Food)
-    }
-}
-*/
+
 

@@ -14,6 +14,7 @@
 		CA002EF6262BE5E300F5E9B4 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC77C0826241B2D003153F4 /* EditView.swift */; };
 		CA002EFD262BE69700F5E9B4 /* FoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA317B092626590500ACA643 /* FoodData.swift */; };
 		CA002F01262BE69700F5E9B4 /* FoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA317B092626590500ACA643 /* FoodData.swift */; };
+		CA14832A262C5DAC00E6559A /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA148329262C5DAC00E6559A /* ImageDownloader.swift */; };
 		CA2773742611EE01003D28FB /* Assignment1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE221EA26016DDB00C04454 /* Assignment1Tests.swift */; };
 		CA317B0A2626590500ACA643 /* FoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA317B092626590500ACA643 /* FoodData.swift */; };
 		CA8AFD23260C6D3800F3A1C8 /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AFD22260C6D3700F3A1C8 /* FoodRow.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		CA002E982629C4D900F5E9B4 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
+		CA148329262C5DAC00E6559A /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		CA317B092626590500ACA643 /* FoodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodData.swift; sourceTree = "<group>"; };
 		CA8AFD22260C6D3700F3A1C8 /* FoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRow.swift; sourceTree = "<group>"; };
 		CA8AFD33260C781F00F3A1C8 /* FoodDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetail.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				CAE221DE26016DDB00C04454 /* Preview Content */,
 				CA8AFD22260C6D3700F3A1C8 /* FoodRow.swift */,
 				CA8AFD33260C781F00F3A1C8 /* FoodDetail.swift */,
+				CA148329262C5DAC00E6559A /* ImageDownloader.swift */,
 				CA002E982629C4D900F5E9B4 /* FoodList.swift */,
 				CAC580692611EC7D00A96258 /* Food.swift */,
 				CAC77C0826241B2D003153F4 /* EditView.swift */,
@@ -297,6 +300,7 @@
 				CAE221D926016DDA00C04454 /* Assignment1App.swift in Sources */,
 				CAC77C0926241B2D003153F4 /* EditView.swift in Sources */,
 				CAC5806A2611EC7D00A96258 /* Food.swift in Sources */,
+				CA14832A262C5DAC00E6559A /* ImageDownloader.swift in Sources */,
 				CA002E992629C4D900F5E9B4 /* FoodList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

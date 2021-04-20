@@ -12,7 +12,7 @@ struct FoodRow: View {
     
     var body: some View {
             HStack {
-                Image(food.image)
+                imageDownload(food.url)
                     .resizable()
                     .frame(width: 50, height: 50)
                 VStack(alignment: .leading) {

@@ -41,7 +41,7 @@ struct FoodList: View {
         favouriteFoods.move(fromOffsets: indicies, toOffset: newOffset)
     }
     func add() {
-        favouriteFoods.append(Food(name: "Food", image: "Placeholder", desc: "Insert description here", story: "Insert story here", recipe: ["Insert recipe here"], ingredients: ["Insert ingredients here"]))
+        favouriteFoods.append(Food(name: "Food", desc: "Insert description here", story: "Insert story here", recipe: ["Insert recipe here"], ingredients: ["Insert ingredients here"], url: "https://i.imgur.com/y3MMnba.png"))
     }
 }
 
